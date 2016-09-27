@@ -1,6 +1,6 @@
 # laravel-interswitch
 
-[![Build Status](https://travis-ci.org/devsng/laravel-interswitch.svg)](https://travis-ci.org/devsng/laravel-interswitch)
+[![Build Status](https://travis-ci.org/DevsNG/laravel-interswitch.svg?branch=master)](https://travis-ci.org/DevsNG/laravel-interswitch)
 [![Latest Stable Version](https://poser.pugx.org/devsng/laravel-interswitch/v/stable)](https://packagist.org/packages/devsng/laravel-interswitch)
 [![Total Downloads](https://poser.pugx.org/devsng/laravel-interswitch/downloads)](https://packagist.org/packages/devsng/laravel-interswitch)
 [![Latest Unstable Version](https://poser.pugx.org/devsng/laravel-interswitch/v/unstable)](https://packagist.org/packages/devsng/laravel-interswitch)
