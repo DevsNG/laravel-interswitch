@@ -9,7 +9,7 @@
 ## Introduction
 Interswitch WebPay Integration package for Laravel 5.
 
-This package enables you to accept Master Card, Visa Card and Verve payments on your Laravel applications.
+This package enables you to accept Master card, Visa card and Verve card payments on your Laravel applications.
 
 
 ## Installation
