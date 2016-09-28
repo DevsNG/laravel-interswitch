@@ -14,7 +14,7 @@ This package enables you to accept Master Card, Visa Card and Verve payments on 
 
 ## Installation
 
-Installation guide is available on the [community website](https://community.devs.ng/t/interswitch-webpay-integration-for-laravel-5/134).
+Installation guide is available on the [community website](https://community.devs.ng/t/interswitch-webpay-integration-for-laravel-5/134#installation).
 
 ## License
 
