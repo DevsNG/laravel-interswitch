@@ -14,17 +14,14 @@ This package enables you to accept Master Card, Visa Card and Verve payments on 
 
 ## Installation
 
-See the [community website](https://community.devs.ng/) for instructions on installing this package.
+Installation guide is available on the [community website](https://community.devs.ng/t/interswitch-webpay-integration-for-laravel-5/134).
 
 ## License
 
 The Laravel Interswitch package is an open-source software initiative of Nigerian Developers Community (Devs.NG) licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-## Official Docs
 
-Learn more about the Interswitch API:  https://connect.interswitchng.com/documentation/
-
-## Connect:
+## Connect
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/DevelopersNG.svg?style=social&label=Follow&maxAge=2592000?style=plastic)](https://twitter.com/DevelopersNG)
 [![Website](https://img.shields.io/website-up-down-green-red/https/community.devs.ng.svg?maxAge=2592000?style=plastic)](https://community.devs.ng)
