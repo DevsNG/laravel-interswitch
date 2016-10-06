@@ -141,8 +141,7 @@ class Interswitch
 
         $json = json_decode($query, true);
 
-        dd($json['ResponseDescription']);
-    //    return json_decode($query, true);
+        return json_decode($query, true);
     }
 
     /**
