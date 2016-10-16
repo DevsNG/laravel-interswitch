@@ -82,7 +82,7 @@ class Interswitch
       );
 
         $inputs['txn_ref'] = $this->setTxnRef(
-        array_get($options, 'txn_ref', TransRef::getHashedToken(7))
+        array_get($options, 'txn_ref', TransRef::getHashedToken(11))
       );
 
         $hashValues = $this->txnref.
@@ -98,6 +98,10 @@ class Interswitch
         $inputs['cust_name'] = $this->setCustName(array_get($options, 'cust_name'));
         $inputs['cust_id'] = $this->txnref;
 
+        foreach ($inputs as $key => $value) {
+            $this->$key = $value;
+        }
+
         return $inputs;
     }
 
@@ -108,20 +112,23 @@ class Interswitch
      *
      * @return HTML
      */
-    public function form(array $options = [])
+    public function form(array $options = [], string $id, $submitBtn = true)
     {
         $array = $this->raw($options);
 
         $action = array_get($array, 'action');
 
-        $form = '<form action ="'.$action.'" method="post">'.PHP_EOL;
+        $form = '<form action ="'.$action.'" method="post" id="'.$id.'">'.PHP_EOL;
         $array = array_except($array, ['action']);
 
         foreach ($array as $key => $value) {
             $form .= '<input type="hidden" name="'.$key.'" value="'.$value.'" />'.PHP_EOL;
         }
 
-        $form .= '<input class="submit" type="submit" name="submit" value="Pay" />'.PHP_EOL;
+        if ($submitBtn) {
+            $form .= '<input class="submit" type="submit" name="submit" value="Pay" />'.PHP_EOL;
+        }
+
         $form .= '</form>'.PHP_EOL;
 
         return $form;
@@ -138,8 +145,13 @@ class Interswitch
     {
         $array = request()->all();
         $query = $this->query($array);
+        $json = json_decode($query, true);
 
-        return json_decode($query, true);
+        foreach ($json as $key => $value) {
+            $this->$key = $value;
+        }
+
+        return $this;
     }
 
     /**
