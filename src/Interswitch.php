@@ -151,7 +151,7 @@ class Interswitch
             $this->$key = $value;
         }
 
-        return $this;
+        return $array;
     }
 
     /**
@@ -273,6 +273,8 @@ class Interswitch
             throw new InvalidArgException('Missing value for TxnRef');
         }
 
-        return $txnref;
+        $this->txnref = $txnref;
+
+        return $this->txnref;
     }
 }
