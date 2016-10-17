@@ -151,7 +151,7 @@ class Interswitch
             $this->$key = $value;
         }
 
-        return $array;
+        return $this;
     }
 
     /**
