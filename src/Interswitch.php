@@ -165,7 +165,7 @@ class Interswitch
     {
         $product_id = array_get($array, 'product_id', $this->productid);
         $txnref = $this->getTxnRef(array_get($array, 'txnref'));
-        $amount = $this->convert(array_get($array, 'amount'));
+        $amount = array_get($array, 'amount');
         $hash = array_get($array, 'hash', $this->hash($product_id.$txnref.$this->mackey));
 
         $client = new Client([
