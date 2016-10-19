@@ -25,13 +25,13 @@ class Interswitch
 
     protected $payitemid;
 
-    protected $amount;
+    public $amount;
 
     protected $currency;
 
     protected $redirecturl;
 
-    protected $txnref;
+    public $txnref;
 
 //    protected $testmode;
 
